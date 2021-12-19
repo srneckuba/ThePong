@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ThePong</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <script type="text/javascript" src="/static/main.js"></script>
+    <script type="text/javascript" src="/static/FernetBrowser.js"></script>
+    <script type="text/javascript" src="/static/md5.min.js"></script>
+  </head>
+  <body onload="on_enter_send();">
+    <span id="testmessage">{{testmessage}}</span>
+    <div class="login">
+      <h3>username</h3>
+      <input type="text" name="username" value="">
+      <h3>password</h3>
+      <input type="password" name="password" value="">
+      </br>
+      <button onclick="test_password()" name="decrypt">Try</button>
+    </div>
+    <div style="display: none;" class="topbar">
+      <p style="float: left;">{{ip}}</p>
+      <p id="date_time"style="float: right;">{{date_time}}</p>
+    </div>
+    <div style="display: none;" id="sidebar"class="sidebar">
+    </div>
+    <div style="display: none;" id="messages_list" class="messages_list">
+    </div>
+    </div>
+    <div style="display: none;"class="message_input">
+      <input onsubmit="send_message()" type="text" name="message" value="">
+      <button onclick="send_message()" name="button">Send</button>
+    </div>
+  </body>
+</html>
