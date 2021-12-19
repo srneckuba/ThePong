@@ -1,2 +1,1 @@
-static/md5.min.js linguist-vendored
-static/fernetBrowser.js linguist-vendored
+*.js linguist-vendored
