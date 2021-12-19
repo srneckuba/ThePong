@@ -5,7 +5,7 @@ import base64, hashlib
 from cryptography.fernet import Fernet
 from bs4 import BeautifulSoup
 import time
-if sys.argv[1] == "--help":
+if sys.argv[1] == "--help" or "-h":
     print("python3 thepong.py [local_server_adress] [publick_server_adress] [messages_file] [encryption_password]")
     exit()
 
