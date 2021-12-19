@@ -95,4 +95,4 @@ def main():
                     else:
                         return abort(400, 'Invalid request')
 if __name__ == '__main__':
-    app.run(host=local_server_adress, debug=True, port="80")
+    app.run(host=local_server_adress, debug=False, port="80")
